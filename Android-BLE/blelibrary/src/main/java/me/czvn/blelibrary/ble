@@ -1,0 +1,26 @@
+周边设备：
+关键类： BluetoothGattServer作为周边来提供数据；BluetoothGattServerCallback返回周边的状态；BluetoothLeAdvertiser用来发送广播。
+
+1、判断是否有发送广播的权限。
+2、获取/打开周边；把service添加到周边。
+3、发送广播，才能被中心设备扫描到。
+
+
+
+
+
+
+
+
+
+
+
+
+
+中心设备：
+关键类：BluetoothGatt作为中央来使用和处理数据；BluetoothGattCallback返回中央的状态和周边提供的数据。
+
+1、获取权限。
+2、扫描到周边设备。
+3、连接到周边设备。
+4、和周边设备进行数据传输。
